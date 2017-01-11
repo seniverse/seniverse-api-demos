@@ -16,7 +16,14 @@
   - [requests](./python/demo-requests.py)
   - [JSONP](./python/demo-jsonp.py)
 
-- PHP
+- [PHP](./php)
+
+  - [JSONP](./php/demo-jsonp.php)
+
+- [Android](https://github.com/thinkpage/ThinkPageSDK_Android)
+
+  - 可直接使用已封装好的 Android SDK
+  - 或自主发起 http 请求，进行 API 调用
 
 - Ruby
 
