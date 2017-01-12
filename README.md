@@ -2,11 +2,14 @@
 
 > 举例说明心知天气 API 的基本调用方法
 
-- [Javascript](./javascript)
+- [Javascript](./javascript) **本示例仅做开发参考使用，不建议在生产环节下暴露 key！生产环境下请通过后端进行签名验证**
 
-  - [JSONP](./javascript/index.html) **本示例仅做开发参考使用，不建议在生产环节下暴露 key！生产环境下请通过后端进行签名验证**
+  - [直接调用](./javascript/index.html)
+  - [JSONP](./javascript/jsonp.html)
 
 - [Node.js](./nodejs)
+
+  - [使用更安全的签名验证方式（荐）](./nodejs/lib/api.js)
 
 - [Python](./python)
 
