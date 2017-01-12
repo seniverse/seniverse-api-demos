@@ -1,6 +1,7 @@
 """
-    本例举例与前端配合，同 JSONP 的形式进行调用时的操作方式
-    Python 作为后端则主要进行加密工作，并将结果通过 HTML 模板或其他方式渲染在页面中
+    本例举例通过更安全的签名验证方式构造请求 URL
+    最终构造的 URL 可传递至前端，通过 JSONP 的方式进行调用，
+    也可在后端 sever 内发送请求
 """
 
 import time
@@ -14,9 +15,8 @@ from utils.helper import getLocation
 
 def getJsonpUrl(location):
     """通过 HMAC-SHA1 进行签名验证
-    最终返回的 url 可传递给前端进行调用
 
-    但需注意，调用时使用的域名或IP需与当前账号在官网上绑定的域名一致！
+    需注意，调用最终的 URL 时使用的域名或IP需与当前账号在官网上绑定的域名一致！
     域名绑定可见：http://www.thinkpage.cn/account
     """
     ts = int(time.time())  # 当前时间戳

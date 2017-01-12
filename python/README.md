@@ -2,7 +2,9 @@
 
 Python3 通过发送网络请求进行 API 的调用
 
-## 使用 [requests](https://github.com/kennethreitz/requests/)
+## 直接调用
+
+### 使用 [requests](https://github.com/kennethreitz/requests/)
 
 通过第三方 Http 请求库进行接口调用。
 
@@ -15,11 +17,11 @@ $ pip3 install requests
 result = requests.get(url, params, timeout)
 ```
 
-## 使用 urllib
+### 使用 urllib
 
 通过官方标准库`urllib`进行接口的调用。
 
-因为 API 为 https，在直接使用 urllib 进行请求时会报错：`urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)>`，需要我们引用`ssl`库进行配置
+使用 https 的 API 时，直接调用 urllib 进行请求会报错：`urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)>`，需要我们引用`ssl`库进行配置
 
 更多详细信息可查看：[Stackoverflow - "SSL: CERTIFICATE_VERIFY_FAILED" Error](http://stackoverflow.com/questions/27835619/ssl-certificate-verify-failed-error)
 
@@ -73,3 +75,17 @@ $ python3 demo-urllib.py 厦门
 $ python3 demo-jsonp.py # 北京
 $ python3 demo-requests.py xiamen # 厦门
 ```
+
+## 参数说明
+
+### 所查询的位置
+
+查询的城市支持如下参数形式：
+
+- 城市ID 例如：`location=WX4FBXXFKE4F`
+- 城市中文名 例如：`location=北京`
+- 省市名称组合 例如：`location=辽宁朝阳`、`location=北京朝阳`
+- 城市拼音/英文名 例如：`location=beijing`（如拼音相同城市，可在之前加省份和空格，例：shanxi yulin）
+- 经纬度 例如：`location=39.93:116.40`（纬度前经度在后，冒号分隔）
+- IP地址 例如：`location=220.181.111.86`（某些IP地址可能无法定位到城市）
+- "ip"两个字母 自动识别请求IP地址，例如：`location=ip`

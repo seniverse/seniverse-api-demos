@@ -4,21 +4,22 @@
 
 - [Javascript](./javascript)
 
-  - [JSONP](./javascript/index.html)
-
-> 注：前端开发者在测试环境下可以直接通过 key 进行 API 的调用，但不建议在生产环境下暴露 key！
+  - [JSONP](./javascript/index.html) **本示例仅做开发参考使用，不建议在生产环节下暴露 key！生产环境下请通过后端进行签名验证**
 
 - [Node.js](./nodejs)
 
 - [Python](./python)
 
-  - [urllib](./python/demo-urllib.py)
-  - [requests](./python/demo-requests.py)
-  - [JSONP](./python/demo-jsonp.py)
+  - 直接调用
+
+    - [urllib](./python/demo-urllib.py)
+    - [requests](./python/demo-requests.py)
+
+  - [使用更安全的签名验证方式（荐）](./python/demo-jsonp.py)
 
 - [PHP](./php)
 
-  - [JSONP](./php/demo-jsonp.php)
+  - [使用更安全的签名验证方式（荐）](./php/demo-jsonp.php)
 
 - [Android](https://github.com/thinkpage/ThinkPageSDK_Android)
 
