@@ -8,10 +8,11 @@ import hashlib
 import hmac
 import base64
 from urllib import parse
-from utils.const_value import UID, KEY, API, LOCATION
+from utils.const_value import UID, KEY, API
+from utils.helper import getLocation
 
 
-def getJsonpUrl():
+def getJsonpUrl(location):
     """通过 HMAC-SHA1 进行签名验证
     最终返回的 url 可传递给前端进行调用
 
@@ -32,10 +33,11 @@ def getJsonpUrl():
     sig = parse.quote(signature.decode('utf8'))
 
     # 构造最终请求的 url
-    url = API + "?location={}&".format(LOCATION) + \
+    url = API + "?location={}&".format(location) + \
         params + '&sig=' + sig + "&callback=?"
     return url
 
 if __name__ == '__main__':
-    url = getJsonpUrl()
+    location = getLocation()
+    url = getJsonpUrl(location)
     print(url)

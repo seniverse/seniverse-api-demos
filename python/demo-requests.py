@@ -1,17 +1,20 @@
 import json
+import sys
 import requests
-from utils.const_value import API, KEY, LOCATION, UNIT, LANGUAGE
+from utils.const_value import API, KEY, UNIT, LANGUAGE
+from utils.helper import getLocation
 
 
-def fetchWeather():
+def fetchWeather(location):
     result = requests.get(API, params={
         'key': KEY,
-        'location': LOCATION,
+        'location': location,
         'language': LANGUAGE,
         'unit': UNIT
     }, timeout=1)
     return result.text
 
 if __name__ == '__main__':
-    result = fetchWeather()
+    location = getLocation()
+    result = fetchWeather(location)
     print(result)

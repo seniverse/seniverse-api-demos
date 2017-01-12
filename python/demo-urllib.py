@@ -1,14 +1,16 @@
 import ssl
+import sys
 from urllib import request, parse
-from utils.const_value import API, KEY, LOCATION, UNIT, LANGUAGE
+from utils.const_value import API, KEY, UNIT, LANGUAGE
+from utils.helper import getLocation
 
 gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 
 
-def fetchWeather():
+def fetchWeather(location):
     params = parse.urlencode({
         'key': KEY,
-        'location': LOCATION,
+        'location': location,
         'language': LANGUAGE,
         'unit': UNIT
     })
@@ -17,5 +19,6 @@ def fetchWeather():
     return response
 
 if __name__ == '__main__':
-    result = fetchWeather()
+    location = getLocation()
+    result = fetchWeather(location)
     print(result)
