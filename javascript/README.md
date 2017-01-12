@@ -45,11 +45,36 @@ str = str + "&sig=" + sig; // 最终构造的已加密的参数字符串
 
 ### 发送请求
 
+#### 直接发送 GET 请求
+
+> 详细代码可见：[ThinkPage API Test](./index.html)
+
 ```javascript
 // 该 Api url 可获取天气实况。用户可替换为其他 url 进行测试
 var API = "http://api.thinkpage.cn/v3/weather/now.json?location=beijing&";
 var url = API + str + "&callback=?";
 $.getJSON(url)
+```
+
+#### 通过 JSONP 的形式调用
+
+> 详细代码可见：[ThinkPage API JSONP Test](./jsonp.html)
+
+```javascript
+// 该 Api url 可获取天气实况。用户可替换为其他 url 进行测试
+var API = "http://api.thinkpage.cn/v3/weather/now.json?location=beijing&";
+var jsonpCallback = function(result) {
+  // result 为回调函数
+  // 用户在这里处理返回的结果
+}
+
+var url = API + str + "&callback=jsonpCallback";
+
+// 向 HTML 中动态插入 script 标签，通过 JSONP 的方式进行调用
+var newScript = document.createElement('script');
+newScript.type = 'text/javascript';
+newScript.src = url;
+$('body').append(newScript);
 ```
 
 ## 本地启动本示例
@@ -62,7 +87,10 @@ $ cd thinkpage-api-js
 $ http-server -p 3333
 ```
 
-打开浏览器访问`http://127.0.0.1:3333/`
+打开浏览器访问
+
+- `http://127.0.0.1:3333/`
+- `http://127.0.0.1:3333/jsonp`
 
 ## 参数说明
 

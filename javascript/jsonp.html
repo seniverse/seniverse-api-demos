@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThinkPage API Test Page</title>
+  <title>ThinkPage API Jsonp Test Page</title>
   <script type="text/javascript" src="scripts/jquery.js"></script>
   <script type="text/javascript" src="scripts/hmac-sha1.js"></script>
 </head>
@@ -29,21 +29,27 @@
   sig = encodeURIComponent(sig);
   str = str + "&sig=" + sig;
 
-  // 构造最终请求的 url
-  var url = API + "?location=" + LOCATION + "&" + str + "&callback=?";
-
-  // 直接发送请求进行调用，手动处理回调函数
-  $.getJSON(url, function(data) {
+  var jsonpCallback = function(data) {
     var obj = document.getElementById('content');
-    var weather = data.results[0]
+    var weather = data.results[0];
 
     var text = [];
     text.push("Location: " + weather.location.path);
     text.push("Weather: " + weather.now.text);
     text.push("Temperature: " + weather.now.temperature);
 
-    obj.innerText = text.join("\n")
-  });
+    obj.innerText = text.join("\n");
+  }
+
+  // 构造最终请求的 url
+  var url = API + "?location=" + LOCATION + "&" + str + "&callback=jsonpCallback";
+
+  // 向 HTML 中动态插入 script 标签，通过 JSONP 的方式进行调用
+  var newScript = document.createElement('script');
+  newScript.type = 'text/javascript';
+  newScript.src = url;
+  $('body').append(newScript);
+
 </script>
 </body>
 </html>
