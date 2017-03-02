@@ -4,7 +4,7 @@ $key = "4r9bergjetiv1tsd"; // 测试用 key，请更换成您自己的 Key
 $uid = "U785B76FC9"; // 测试用 用户ID，请更换成您自己的用户ID
 
 // 获取当前时间戳，并构造验证参数字符串
-$keyname = "ts=".time()."&ttl=30&uid=".$uid;
+$keyname = "ts=".time()."&ttl=300&uid=".$uid;
 
 echo "\n";
 echo $keyname;
