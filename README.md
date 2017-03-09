@@ -24,9 +24,9 @@
 
   - [使用更安全的签名验证方式（荐）](./php/demo-jsonp.php)
 
-- [Android](https://github.com/thinkpage/ThinkPageSDK_Android)
+- Android
 
-  - 可直接使用已封装好的 Android SDK
+  - ~~可直接使用已封装好的 [Android SDK](https://github.com/thinkpage/ThinkPageSDK_Android)~~ **注：该 SDK 已停止维护，不建议使用**
   - 或自主发起 http 请求，进行 API 调用
 
 - Ruby
