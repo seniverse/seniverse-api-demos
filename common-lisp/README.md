@@ -18,7 +18,7 @@
 ### Prepare
 
 ```shell
-$ git clone https://github.com/seniverse/api-demos.git
+$ git clone https://github.com/seniverse/seniverse-api-demos.git
 $ ln -s api-demos/common-lisp/ ~/quicklisp/local-projects/seniverse-demo
 ```
 
