@@ -27,6 +27,7 @@
 - [PHP](./php)
 
   - [使用更安全的签名验证方式（荐）](./php/demo-jsonp.php)
+  - [PHP demo, contributed by open source community](./php/demo.php)
 
 - Android
 
@@ -47,4 +48,5 @@
 ## Contributors
 
 - [muyinliu](https://github.com/muyinliu)
+- [mokeyjay](https://github.com/mokeyjay)
 - [ecmadao](https://github.com/ecmadao)
