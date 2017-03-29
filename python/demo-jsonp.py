@@ -17,7 +17,7 @@ def getJsonpUrl(location):
     """通过 HMAC-SHA1 进行签名验证
 
     需注意，调用最终的 URL 时使用的域名或IP需与当前账号在官网上绑定的域名一致！
-    域名绑定可见：http://www.thinkpage.cn/account
+    域名绑定可见：http://www.seniverse.com/account
     """
     ts = int(time.time())  # 当前时间戳
     params = "ts={ts}&uid={uid}".format(ts=ts, uid=UID)  # 构造验证参数字符串

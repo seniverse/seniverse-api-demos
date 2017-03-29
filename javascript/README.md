@@ -1,6 +1,6 @@
 # Javascript 调用 API 示例
 
-> [查看自己的用户ID 和 API key](http://www.thinkpage.cn/doc#info)
+> [查看自己的用户ID 和 API key](http://www.seniverse.com/doc#info)
 
 > 注：本示例仅做开发参考使用，不建议在生产环节下暴露 key！
 
@@ -47,7 +47,7 @@ str = str + "&sig=" + sig; // 最终构造的已加密的参数字符串
 
 #### 直接发送 GET 请求
 
-> 详细代码可见：[ThinkPage API Test](./index.html)
+> 详细代码可见：[Seniverse API Test](./index.html)
 
 ```javascript
 // 该 Api url 可获取天气实况。用户可替换为其他 url 进行测试
@@ -58,7 +58,7 @@ $.getJSON(url)
 
 #### 通过 JSONP 的形式调用
 
-> 详细代码可见：[ThinkPage API JSONP Test](./jsonp.html)
+> 详细代码可见：[Seniverse API JSONP Test](./jsonp.html)
 
 ```javascript
 // 该 Api url 可获取天气实况。用户可替换为其他 url 进行测试
@@ -83,7 +83,7 @@ $('body').append(newScript);
 
 ```bash
 $ npm install http-server -g
-$ cd thinkpage-api-js
+$ cd seniverse-api-demos/javascript
 $ http-server -p 3333
 ```
 

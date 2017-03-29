@@ -1,7 +1,7 @@
-(defpackage thinkpage-demo
+(defpackage seniverse-demo
   (:use :cl))
 
-(in-package :thinkpage-demo)
+(in-package :seniverse-demo)
 
 (defvar *api-key* "4r9bergjetiv1tsd") ;; Please use your own API key
 (defvar *user-id* "U785B76FC9")       ;; Please use your own User ID
@@ -26,7 +26,7 @@
          (hmac (ironclad:make-hmac key-vector 'ironclad:sha1))
          (signature (progn
                       (ironclad:update-hmac hmac string-vector)
-                      (drakma:url-encode 
+                      (drakma:url-encode
                        (base64:usb8-array-to-base64-string
                         (ironclad:hmac-digest hmac))
                        :utf-8)))
@@ -46,5 +46,5 @@
       (format *terminal-io* "~A~%~A~%"
               (flex:octets-to-string data :external-format :utf-8)
               status-code))))
-    
+
 (test)

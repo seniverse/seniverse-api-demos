@@ -18,7 +18,7 @@ echo $sig;
 // 将上一步生成的加密结果用 base64 编码，并做一个 urlencode，得到签名sig
 $signedkeyname = $keyname."&sig=".urlencode($sig);
 
-// 最终构造出可由前端进行调用的 url
+// 最终构造出可由前端或服务端进行调用的 url
 $url = "https://api.thinkpage.cn/v3/weather/now.json?location=".$location."&".$signedkeyname;
 
 echo "\n";

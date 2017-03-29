@@ -54,7 +54,7 @@ response = request.urlopen(req, context=gcontext).read().decode('UTF-8')
 
 具体签名方式可以参考：[demo-jsonp.py](./demo-jsonp.py)，直接运行文件将会输出最终应该调用的 URL，该 URL 可由传递至前端进行调用，也可以在后端 server 内调用
 
-> 但需注意，**调用时使用的域名或IP需与当前账号在官网上绑定的域名一致！**域名绑定可见：[我的服务->我的账号](http://www.thinkpage.cn/account)
+> 但需注意，**调用时使用的域名或IP需与当前账号在官网上绑定的域名一致！**域名绑定可见：[我的服务->我的账号](http://www.seniverse.com/account)
 
 ## 本地测试
 
