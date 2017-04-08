@@ -34,7 +34,7 @@
 
 - Ruby
 
-- Java
+- [Java](./java)
 
 - Swift
 
@@ -45,6 +45,7 @@
 
 ## Contributors
 
+- [flyingant](https://github.com/flyingant)
 - [muyinliu](https://github.com/muyinliu)
 - [mokeyjay](https://github.com/mokeyjay)
 - [ecmadao](https://github.com/ecmadao)
