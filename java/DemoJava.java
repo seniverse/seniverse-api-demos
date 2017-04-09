@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
 
 class DemoJava {
 
-    private String TIANQI_DIARY_WEATHER_URL = "https://api.seniverse.com/v3/weather/daily.json";
+    private String TIANQI_DAILY_WEATHER_URL = "https://api.seniverse.com/v3/weather/daily.json";
 
     private String TIANQI_API_SECRET_KEY = "YOUR API KEY"; //
 
@@ -57,7 +57,7 @@ class DemoJava {
         String timestamp = String.valueOf(new Date().getTime());
         String params = "ts=" + timestamp + "&ttl=30&uid=" + TIANQI_API_USER_ID;
         String signature = URLEncoder.encode(generateSignature(params, TIANQI_API_SECRET_KEY), "UTF-8");
-        return TIANQI_DIARY_WEATHER_URL + "?" + params + "&sig=" + signature + "&location=" + location + "&language=" + language + "&unit=" + unit + "&start=" + start + "&days=" + days;
+        return TIANQI_DAILY_WEATHER_URL + "?" + params + "&sig=" + signature + "&location=" + location + "&language=" + language + "&unit=" + unit + "&start=" + start + "&days=" + days;
     }
 
     public static void main(String args[]){
