@@ -1,5 +1,3 @@
-import json
-import sys
 import requests
 from utils.const_value import API, KEY, UNIT, LANGUAGE
 from utils.helper import getLocation

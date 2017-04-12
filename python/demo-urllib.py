@@ -1,5 +1,4 @@
 import ssl
-import sys
 from urllib import request, parse
 from utils.const_value import API, KEY, UNIT, LANGUAGE
 from utils.helper import getLocation
