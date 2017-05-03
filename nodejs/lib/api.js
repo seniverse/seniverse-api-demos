@@ -7,7 +7,7 @@ var crypto = require('crypto');
 var querystring = require('querystring');
 var request = require('request-promise');
 
-var URL = 'https://api.thinkpage.cn/v3/';
+var URL = 'https://api.seniverse.com/v3/';
 
 function Api(uid, secretKey) {
   this.uid = uid;
@@ -27,7 +27,7 @@ Api.prototype.getSignatureParams = function() {
     .update(str)
     .digest('base64'); // 将加密结果用 base64 编码，并做一个 urlencode，得到签名 sig
 
-  return params
+  return params;
 }
 
 Api.prototype.getWeatherNow = function(location) {
@@ -39,7 +39,7 @@ Api.prototype.getWeatherNow = function(location) {
     url: URL + 'weather/now.json',
     qs : params,
     json : true
-  })
+  });
 }
 
 

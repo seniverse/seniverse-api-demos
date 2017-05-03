@@ -6,7 +6,7 @@
 (defvar *api-key* "4r9bergjetiv1tsd") ;; Please use your own API key
 (defvar *user-id* "U785B76FC9")       ;; Please use your own User ID
 (defvar *auth-ttl* 1800) ;; second
-(defvar *api-url* "https://api.thinkpage.cn/v3/weather/now.json")
+(defvar *api-url* "https://api.seniverse.com/v3/weather/now.json")
 (defvar *universal-time-diff-unix-time* 2208988800)
 
 (defun universal-time->unix-time (universal-time)

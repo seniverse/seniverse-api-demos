@@ -19,7 +19,7 @@ echo $sig;
 $signedkeyname = $keyname."&sig=".urlencode($sig);
 
 // 最终构造出可由前端或服务端进行调用的 url
-$url = "https://api.thinkpage.cn/v3/weather/now.json?location=".$location."&".$signedkeyname;
+$url = "https://api.seniverse.com/v3/weather/now.json?location=".$location."&".$signedkeyname;
 
 echo "\n";
 echo $url;

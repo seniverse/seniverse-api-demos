@@ -3,7 +3,7 @@
 $key = '4r9bergjetiv1tsd'; // 测试用 key，请更换成您自己的 Key
 $uid = 'U785B76FC9'; // 测试用 用户ID，请更换成您自己的用户ID
 // 参数
-$api = 'https://api.thinkpage.cn/v3/weather/daily.json'; // 接口地址
+$api = 'https://api.seniverse.com/v3/weather/daily.json'; // 接口地址
 $location = '深圳'; // 城市名称。除拼音外，还可以使用 v3 id、汉语等形式
 
 // 生成签名。文档：https://www.seniverse.com/doc#sign

@@ -51,7 +51,7 @@ str = str + "&sig=" + sig; // 最终构造的已加密的参数字符串
 
 ```javascript
 // 该 Api url 可获取天气实况。用户可替换为其他 url 进行测试
-var API = "http://api.thinkpage.cn/v3/weather/now.json?location=beijing&";
+var API = "http://api.seniverse.com/v3/weather/now.json?location=beijing&";
 var url = API + str + "&callback=?";
 $.getJSON(url)
 ```
@@ -62,7 +62,7 @@ $.getJSON(url)
 
 ```javascript
 // 该 Api url 可获取天气实况。用户可替换为其他 url 进行测试
-var API = "http://api.thinkpage.cn/v3/weather/now.json?location=beijing&";
+var API = "http://api.seniverse.com/v3/weather/now.json?location=beijing&";
 var jsonpCallback = function(result) {
   // result 为回调函数
   // 用户在这里处理返回的结果

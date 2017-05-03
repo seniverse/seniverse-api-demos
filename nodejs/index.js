@@ -8,8 +8,8 @@ var argv = require('optimist').default('l', LOCATION).argv;
 
 
 var api = new Api(UID, KEY);
-api.getWeatherNow(argv.l).then(function(data){
-  console.log(JSON.stringify(data, null, 4))
+api.getWeatherNow(argv.l).then(function(data) {
+  console.log(JSON.stringify(data, null, 4));
 }).catch(function(err) {
-  console.log(err.error.status)
+  console.log(err.error.status);
 });
