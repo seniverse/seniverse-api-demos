@@ -8,10 +8,9 @@
   <script type="text/javascript" src="scripts/hmac-sha1.js"></script>
 </head>
 <body>
-  <div id="content">
-  </div>
+  <div id="content"></div>
 <script>
-  /******** 本示例仅做开发参考使用，不建议在生产环节下暴露 key！ ********/
+  /******** 本示例仅做开发参考使用，不建议在生产环境下暴露 key！ ********/
 
   var UID = "U785B76FC9"; // 测试用 用户ID，请更换成您自己的用户ID
   var KEY = "4r9bergjetiv1tsd"; // 测试用key，请更换成您自己的 Key
@@ -35,7 +34,7 @@
   // 直接发送请求进行调用，手动处理回调函数
   $.getJSON(url, function(data) {
     var obj = document.getElementById('content');
-    var weather = data.results[0]
+    var weather = data.results[0];
 
     var text = [];
     text.push("Location: " + weather.location.path);

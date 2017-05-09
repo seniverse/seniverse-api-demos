@@ -4,7 +4,7 @@
 
 **注： 心知天气官网正式启用新域名：[www.seniverse.com](//www.seniverse.com) ，因此本项目由 thinkpage-api-demos 改名为 seniverse-api-demos**
 
-- [Javascript](./javascript) **本示例仅做开发参考使用，不建议在生产环节下暴露 key！生产环境下请通过后端进行签名验证**
+- [Javascript](./javascript) **本示例仅做开发参考使用，不建议在生产环境下暴露 key！生产环境下请通过后端进行签名验证**
 
   - [直接调用](./javascript/index.html)
   - [JSONP](./javascript/jsonp.html)
