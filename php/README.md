@@ -2,7 +2,16 @@
 
 ## 使用更安全的签名验证方式（荐）
 
-具体签名方式可以参考：[demo1.php](./demo-jsonp.php) 或者 [demo2.php](./demo.php)，直接运行文件将会输出最终应该调用的 URL
+具体签名方式可以参考:
+
+直接运行文件将会输出最终应该调用的 URL
+
+- [demo1.php](./demo-jsonp.php)
+- [demo2.php](./demo.php)
+
+构造 URL，并使用 curl 获取数据
+
+- [curl_example.php](./curl_example.php)
 
 之后将该 URL 传递至前端通过 JSONP 进行调用，或在后端 server 内调用
 

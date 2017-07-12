@@ -17,6 +17,7 @@ def fetchWeather(location):
     response = request.urlopen(req, context=gcontext).read().decode('UTF-8')
     return response
 
+
 if __name__ == '__main__':
     location = getLocation()
     result = fetchWeather(location)

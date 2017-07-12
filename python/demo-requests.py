@@ -12,6 +12,7 @@ def fetchWeather(location):
     }, timeout=1)
     return result.text
 
+
 if __name__ == '__main__':
     location = getLocation()
     result = fetchWeather(location)

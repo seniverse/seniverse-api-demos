@@ -37,6 +37,7 @@ def getJsonpUrl(location):
         params + '&sig=' + sig + "&callback=?"
     return url
 
+
 if __name__ == '__main__':
     location = getLocation()
     url = getJsonpUrl(location)
