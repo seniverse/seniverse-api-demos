@@ -79,7 +79,7 @@ $('body').append(newScript);
 
 ## 本地启动本示例
 
-需要起本地 server, 测试中使用的key和uid绑定的域名是127.0.0.1.
+需要起本地 server, 测试中使用的 key 和 uid 绑定的域名是127.0.0.1.
 
 ```bash
 $ npm install http-server -g
@@ -89,14 +89,13 @@ $ http-server -p 3333
 
 打开浏览器访问
 
-- `http://127.0.0.1:3333/`
 - `http://127.0.0.1:3333/jsonp`
 
-*注：请通过 `127.0.0.1` 的链接进行访问，而不是 `localhost`，`localhost` 访问会跨域！！！*
+*注：请通过 `127.0.0.1` 的链接访问 `/jsonp`，而不是 `localhost`，`localhost` 访问会跨域！！！*
 
-*注：请通过 `127.0.0.1` 的链接进行访问，而不是 `localhost`，`localhost` 访问会跨域！！！*
+*注：请通过 `127.0.0.1` 的链接访问 `/jsonp`，而不是 `localhost`，`localhost` 访问会跨域！！！*
 
-*注：请通过 `127.0.0.1` 的链接进行访问，而不是 `localhost`，`localhost` 访问会跨域！！！*
+*注：请通过 `127.0.0.1` 的链接访问 `/jsonp`，而不是 `localhost`，`localhost` 访问会跨域！！！*
 
 ## 参数说明
 

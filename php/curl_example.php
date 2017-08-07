@@ -7,7 +7,7 @@ function httpGet($url)
     $output=curl_exec($ch);
 
     curl_close($ch);
-    return $output;
+    return var_dump($output);
 }
 
 // 心知天气接口调用凭据
