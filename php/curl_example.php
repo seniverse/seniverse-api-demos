@@ -4,6 +4,8 @@ function httpGet($url)
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    //终止从服务端进行验证
+	curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,FALSE);
     $output=curl_exec($ch);
 
     curl_close($ch);
