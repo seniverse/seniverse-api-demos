@@ -40,6 +40,8 @@
 
 - Swift
 
+- [Object-C](./oc)
+
 - [Common Lisp](./common-lisp)
 
   - [使用更安全的签名验证方式（荐）](./common-lisp/seniverse-demo.lisp)
@@ -75,6 +77,7 @@
 
 ## Contributors
 
+- [wuqingzheng](https://github.com/wuqingzheng)
 - [flyingant](https://github.com/flyingant)
 - [muyinliu](https://github.com/muyinliu)
 - [mokeyjay](https://github.com/mokeyjay)
