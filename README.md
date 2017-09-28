@@ -77,6 +77,7 @@
 
 ## Contributors
 
+- [hewiez](https://github.com/hewiez)
 - [wuqingzheng](https://github.com/wuqingzheng)
 - [flyingant](https://github.com/flyingant)
 - [muyinliu](https://github.com/muyinliu)
