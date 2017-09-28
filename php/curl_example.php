@@ -3,7 +3,12 @@ function httpGet($url)
 {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    // 终止从服务端进行验证
+    // 如需设置为 TRUE，建议参考如下解决方案：
+    // https://stackoverflow.com/questions/18971983/curl-requires-curlopt-ssl-verifypeer-false
+    // https://stackoverflow.com/questions/6324391/php-curl-setoptch-curlopt-ssl-verifypeer-false-too-slow
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
     $output=curl_exec($ch);
 
     curl_close($ch);
