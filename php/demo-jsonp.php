@@ -23,3 +23,4 @@ $url = "https://api.seniverse.com/v3/weather/now.json?location=".$location."&".$
 
 echo "\n";
 echo $url;
+?>
