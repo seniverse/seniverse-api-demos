@@ -75,6 +75,11 @@
 - ts 时间戳过短
 - Key 加密后的结果没有通过 Base64 编码
 
+## Third party modules
+
+- Javascript
+  - [seniverse-jsonp](https://github.com/seanhuai/seniverse-jsonp)
+
 ## Contributors
 
 - [hewiez](https://github.com/hewiez)
