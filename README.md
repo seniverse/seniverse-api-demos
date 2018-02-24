@@ -78,6 +78,11 @@
   1. 参数按照键字典升序排列，例如`ts=1443079775&ttl=30&uid=U123456789`或者`ts=1443079775&uid=U123456789`
   2. `ts`和`ttl`的单位都是秒
 
+## Third party modules
+
+- Javascript
+  - [seniverse-jsonp](https://github.com/seanhuai/seniverse-jsonp)
+
 ## Contributors
 
 - [hewiez](https://github.com/hewiez)
