@@ -31,6 +31,8 @@
   // 构造最终请求的 url
   var url = API + "?location=" + LOCATION + "&" + str + "&callback=foo";
 
+  console.log(url)
+
   // 直接发送请求进行调用，手动处理回调函数
   $.getJSON(url, function(data) {
     var obj = document.getElementById('content');
