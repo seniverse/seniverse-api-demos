@@ -57,8 +57,31 @@ struct SeniverseAPI {
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             if let jsonData = data {
-                let jsonObject = try? JSONSerialization.jsonObject(with: jsonData, options: [])
-                print(jsonObject)
+                // Use Swift4 Codable (Recommended)
+                let weather = try? JSONDecoder().decode(Weather.self, from: jsonData)
+                print(weather)
+                print(weather?.results.first)
+
+                /*
+                // Use old JSONSerialization.jsonObject way
+                let jsonObject = try? JSONSerialization.jsonObject(with: jsonData, options: []) as! [String:AnyObject]
+                print(jsonObject!)
+                guard
+                    let results = jsonObject!["results"] as? [[String:AnyObject]],
+                    let result = results.first,
+                    let location = result["location"] as? [String:AnyObject],
+                    let now = result["now"] as? [String:AnyObject]
+                else {
+                    print("Error: \(WeatherParseError.ParseError)")
+                    return
+                }
+                print(location)
+                print(now)
+                */
+            } else if error != nil {
+                print("Error: \(WeatherParseError.HttpError)")
+            } else {
+                print("Error: \(WeatherParseError.ParseError)")
             }
             semaphore.signal()
         }
