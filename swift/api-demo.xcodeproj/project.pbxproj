@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F96F30F204127AF003E7212 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F30E204127AF003E7212 /* main.swift */; };
+		1F96F34F20412BE8003E7212 /* SeniverseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F34E20412BE8003E7212 /* SeniverseAPI.swift */; };
+		1FDA0FB32041330A00CC1CE1 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDA0FAC204132F700CC1CE1 /* CommonCrypto.framework */; };
+		1FDA0FB8204237CD00CC1CE1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0FB7204237CD00CC1CE1 /* Weather.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FDA0FAB204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 211216831AE68D26004E1CE6;
+			remoteInfo = "CommonCrypto-macOS";
+		};
+		1FDA0FAD204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 216CAE341AE6B273009A69EF;
+			remoteInfo = "CommonCrypto-iOS";
+		};
+		1FDA0FAF204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 804503281BA209F6002A5470;
+			remoteInfo = "CommonCrypto-watchOS";
+		};
+		1FDA0FB1204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80098A511C12E5890029C530;
+			remoteInfo = "CommonCrypto-tvOS";
+		};
+		1FDA0FB42041330E00CC1CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 211216821AE68D26004E1CE6;
+			remoteInfo = "CommonCrypto-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F96F309204127AF003E7212 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F96F30B204127AF003E7212 /* api-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "api-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F96F30E204127AF003E7212 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1F96F34E20412BE8003E7212 /* SeniverseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeniverseAPI.swift; sourceTree = "<group>"; };
+		1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonCrypto.xcodeproj; path = "../../../Downloads/CommonCrypto-master/CommonCrypto-master/CommonCrypto.xcodeproj"; sourceTree = "<group>"; };
+		1FDA0FB7204237CD00CC1CE1 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F96F308204127AF003E7212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDA0FB32041330A00CC1CE1 /* CommonCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F96F302204127AF003E7212 = {
+			isa = PBXGroup;
+			children = (
+				1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */,
+				1F96F30D204127AF003E7212 /* api-demo */,
+				1F96F30C204127AF003E7212 /* Products */,
+				1F96F32D2041284B003E7212 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F96F30C204127AF003E7212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F96F30B204127AF003E7212 /* api-demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F96F30D204127AF003E7212 /* api-demo */ = {
+			isa = PBXGroup;
+			children = (
+				1F96F30E204127AF003E7212 /* main.swift */,
+				1F96F34E20412BE8003E7212 /* SeniverseAPI.swift */,
+				1FDA0FB7204237CD00CC1CE1 /* Weather.swift */,
+			);
+			path = "api-demo";
+			sourceTree = "<group>";
+		};
+		1F96F32D2041284B003E7212 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FDA0FA5204132F700CC1CE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FDA0FAC204132F700CC1CE1 /* CommonCrypto.framework */,
+				1FDA0FAE204132F700CC1CE1 /* CommonCrypto.framework */,
+				1FDA0FB0204132F700CC1CE1 /* CommonCrypto.framework */,
+				1FDA0FB2204132F700CC1CE1 /* CommonCrypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F96F30A204127AF003E7212 /* api-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F96F312204127AF003E7212 /* Build configuration list for PBXNativeTarget "api-demo" */;
+			buildPhases = (
+				1F96F307204127AF003E7212 /* Sources */,
+				1F96F308204127AF003E7212 /* Frameworks */,
+				1F96F309204127AF003E7212 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FDA0FB52041330E00CC1CE1 /* PBXTargetDependency */,
+			);
+			name = "api-demo";
+			productName = "what-the-fuck";
+			productReference = 1F96F30B204127AF003E7212 /* api-demo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F96F303204127AF003E7212 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Edward;
+				TargetAttributes = {
+					1F96F30A204127AF003E7212 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F96F306204127AF003E7212 /* Build configuration list for PBXProject "api-demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F96F302204127AF003E7212;
+			productRefGroup = 1F96F30C204127AF003E7212 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1FDA0FA5204132F700CC1CE1 /* Products */;
+					ProjectRef = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1F96F30A204127AF003E7212 /* api-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1FDA0FAC204132F700CC1CE1 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 1FDA0FAB204132F700CC1CE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FDA0FAE204132F700CC1CE1 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 1FDA0FAD204132F700CC1CE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FDA0FB0204132F700CC1CE1 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 1FDA0FAF204132F700CC1CE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FDA0FB2204132F700CC1CE1 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 1FDA0FB1204132F700CC1CE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F96F307204127AF003E7212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F96F34F20412BE8003E7212 /* SeniverseAPI.swift in Sources */,
+				1FDA0FB8204237CD00CC1CE1 /* Weather.swift in Sources */,
+				1F96F30F204127AF003E7212 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FDA0FB52041330E00CC1CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CommonCrypto-macOS";
+			targetProxy = 1FDA0FB42041330E00CC1CE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F96F310204127AF003E7212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F96F311204127AF003E7212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1F96F313204127AF003E7212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8BGC5QB3U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1F96F314204127AF003E7212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8BGC5QB3U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F96F306204127AF003E7212 /* Build configuration list for PBXProject "api-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F96F310204127AF003E7212 /* Debug */,
+				1F96F311204127AF003E7212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F96F312204127AF003E7212 /* Build configuration list for PBXNativeTarget "api-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F96F313204127AF003E7212 /* Debug */,
+				1F96F314204127AF003E7212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F96F303204127AF003E7212 /* Project object */;
+}

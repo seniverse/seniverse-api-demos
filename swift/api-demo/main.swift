@@ -1,9 +1,6 @@
 //
 //  main.swift
 //
-//  Created by ecmadao on 2018/2/24.
-//  Copyright © 2018年 ecmadao. All rights reserved.
-//
 
 import Foundation
 import CommonCrypto
