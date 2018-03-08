@@ -14,5 +14,5 @@ extension String {
     }
 }
 print("Fetching weather now api")
-SeniverseAPI.fetchWeatherNow(location: "Beijing")
+Seniverse.API.weatherNow(location: "Beijing")
 

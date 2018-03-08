@@ -7,47 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5C84652050E9520030CDFB /* Seniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C84642050E9520030CDFB /* Seniverse.swift */; };
 		1F96F30F204127AF003E7212 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F30E204127AF003E7212 /* main.swift */; };
-		1F96F34F20412BE8003E7212 /* SeniverseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F34E20412BE8003E7212 /* SeniverseAPI.swift */; };
-		1FDA0FB32041330A00CC1CE1 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDA0FAC204132F700CC1CE1 /* CommonCrypto.framework */; };
 		1FDA0FB8204237CD00CC1CE1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0FB7204237CD00CC1CE1 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1FDA0FAB204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+		1F5C846D2050E9630030CDFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			containerPortal = 1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 211216831AE68D26004E1CE6;
 			remoteInfo = "CommonCrypto-macOS";
 		};
-		1FDA0FAD204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+		1F5C846F2050E9630030CDFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			containerPortal = 1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 216CAE341AE6B273009A69EF;
 			remoteInfo = "CommonCrypto-iOS";
 		};
-		1FDA0FAF204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+		1F5C84712050E9630030CDFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			containerPortal = 1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 804503281BA209F6002A5470;
 			remoteInfo = "CommonCrypto-watchOS";
 		};
-		1FDA0FB1204132F700CC1CE1 /* PBXContainerItemProxy */ = {
+		1F5C84732050E9630030CDFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+			containerPortal = 1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 80098A511C12E5890029C530;
 			remoteInfo = "CommonCrypto-tvOS";
-		};
-		1FDA0FB42041330E00CC1CE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 211216821AE68D26004E1CE6;
-			remoteInfo = "CommonCrypto-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,10 +56,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F5C84642050E9520030CDFB /* Seniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seniverse.swift; sourceTree = "<group>"; };
+		1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CommonCrypto.xcodeproj; sourceTree = "<group>"; };
 		1F96F30B204127AF003E7212 /* api-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "api-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F96F30E204127AF003E7212 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		1F96F34E20412BE8003E7212 /* SeniverseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeniverseAPI.swift; sourceTree = "<group>"; };
-		1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonCrypto.xcodeproj; path = "../../../Downloads/CommonCrypto-master/CommonCrypto-master/CommonCrypto.xcodeproj"; sourceTree = "<group>"; };
 		1FDA0FB7204237CD00CC1CE1 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,17 +68,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FDA0FB32041330A00CC1CE1 /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5C84672050E9630030CDFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C846E2050E9630030CDFB /* CommonCrypto.framework */,
+				1F5C84702050E9630030CDFB /* CommonCrypto.framework */,
+				1F5C84722050E9630030CDFB /* CommonCrypto.framework */,
+				1F5C84742050E9630030CDFB /* CommonCrypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1F96F302204127AF003E7212 = {
 			isa = PBXGroup;
 			children = (
-				1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */,
+				1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */,
 				1F96F30D204127AF003E7212 /* api-demo */,
 				1F96F30C204127AF003E7212 /* Products */,
 				1F96F32D2041284B003E7212 /* Frameworks */,
@@ -104,8 +106,8 @@
 		1F96F30D204127AF003E7212 /* api-demo */ = {
 			isa = PBXGroup;
 			children = (
+				1F5C84642050E9520030CDFB /* Seniverse.swift */,
 				1F96F30E204127AF003E7212 /* main.swift */,
-				1F96F34E20412BE8003E7212 /* SeniverseAPI.swift */,
 				1FDA0FB7204237CD00CC1CE1 /* Weather.swift */,
 			);
 			path = "api-demo";
@@ -116,17 +118,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1FDA0FA5204132F700CC1CE1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1FDA0FAC204132F700CC1CE1 /* CommonCrypto.framework */,
-				1FDA0FAE204132F700CC1CE1 /* CommonCrypto.framework */,
-				1FDA0FB0204132F700CC1CE1 /* CommonCrypto.framework */,
-				1FDA0FB2204132F700CC1CE1 /* CommonCrypto.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +134,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1FDA0FB52041330E00CC1CE1 /* PBXTargetDependency */,
 			);
 			name = "api-demo";
 			productName = "what-the-fuck";
@@ -178,8 +168,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1FDA0FA5204132F700CC1CE1 /* Products */;
-					ProjectRef = 1FDA0FA4204132F700CC1CE1 /* CommonCrypto.xcodeproj */;
+					ProductGroup = 1F5C84672050E9630030CDFB /* Products */;
+					ProjectRef = 1F5C84662050E9630030CDFB /* CommonCrypto.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -190,32 +180,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1FDA0FAC204132F700CC1CE1 /* CommonCrypto.framework */ = {
+		1F5C846E2050E9630030CDFB /* CommonCrypto.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CommonCrypto.framework;
-			remoteRef = 1FDA0FAB204132F700CC1CE1 /* PBXContainerItemProxy */;
+			remoteRef = 1F5C846D2050E9630030CDFB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1FDA0FAE204132F700CC1CE1 /* CommonCrypto.framework */ = {
+		1F5C84702050E9630030CDFB /* CommonCrypto.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CommonCrypto.framework;
-			remoteRef = 1FDA0FAD204132F700CC1CE1 /* PBXContainerItemProxy */;
+			remoteRef = 1F5C846F2050E9630030CDFB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1FDA0FB0204132F700CC1CE1 /* CommonCrypto.framework */ = {
+		1F5C84722050E9630030CDFB /* CommonCrypto.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CommonCrypto.framework;
-			remoteRef = 1FDA0FAF204132F700CC1CE1 /* PBXContainerItemProxy */;
+			remoteRef = 1F5C84712050E9630030CDFB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1FDA0FB2204132F700CC1CE1 /* CommonCrypto.framework */ = {
+		1F5C84742050E9630030CDFB /* CommonCrypto.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CommonCrypto.framework;
-			remoteRef = 1FDA0FB1204132F700CC1CE1 /* PBXContainerItemProxy */;
+			remoteRef = 1F5C84732050E9630030CDFB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -225,21 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F96F34F20412BE8003E7212 /* SeniverseAPI.swift in Sources */,
+				1F5C84652050E9520030CDFB /* Seniverse.swift in Sources */,
 				1FDA0FB8204237CD00CC1CE1 /* Weather.swift in Sources */,
 				1F96F30F204127AF003E7212 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1FDA0FB52041330E00CC1CE1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CommonCrypto-macOS";
-			targetProxy = 1FDA0FB42041330E00CC1CE1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1F96F310204127AF003E7212 /* Debug */ = {
