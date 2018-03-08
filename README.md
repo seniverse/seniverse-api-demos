@@ -85,6 +85,7 @@
 
 ## Contributors
 
+- [weishuaigithub](https://github.com/weishuaigithub)
 - [hewiez](https://github.com/hewiez)
 - [wuqingzheng](https://github.com/wuqingzheng)
 - [flyingant](https://github.com/flyingant)
