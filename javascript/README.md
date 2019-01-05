@@ -110,7 +110,7 @@ $ cd seniverse-api-demos/javascript
 $ http-server -p 3004
 ```
 
-打开浏览器访问 `http://127.0.0.1:3333/widget.html` (`widget.html` 名称可替换为你自己的 HTML 名)
+打开浏览器访问 `http://127.0.0.1:3004/widget.html` (`widget.html` 名称可替换为你自己的 HTML 名)
 
 ## 参数说明
 
