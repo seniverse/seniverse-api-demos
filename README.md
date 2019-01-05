@@ -55,11 +55,11 @@
 
 2. 为什么我绑定了 `127.0.0.1` 但访问时报错（没有找到域名，或者报跨域请求的错误）？（常见于纯前端 API 调用时）
 
-**请通过 `127.0.0.1` 的链接，通过 jsonp 的形式访问，而不是 `localhost`，`localhost` 访问会跨域！！！**
+**请通过 `127.0.0.1` 的链接，通过 jsonp 的形式访问，而不是 `localhost`，`localhost` 访问会跨域**
 
-**请通过 `127.0.0.1` 的链接，通过 jsonp 的形式访问，而不是 `localhost`，`localhost` 访问会跨域！！！**
+**请通过 `127.0.0.1` 的链接，通过 jsonp 的形式访问，而不是 `localhost`，`localhost` 访问会跨域**
 
-**请通过 `127.0.0.1` 的链接，通过 jsonp 的形式访问，而不是 `localhost`，`localhost` 访问会跨域！！！**
+**请通过 `127.0.0.1` 的链接，通过 jsonp 的形式访问，而不是 `localhost`，`localhost` 访问会跨域**
 
 3. 关于 API 调用问题
 
@@ -77,6 +77,7 @@
 - 在构造签名的时候，参数的顺序不正确！参与签名的参数有 UNIX 时间戳`ts`，签名失效时间`ttl`（单位为秒，缺省为 1800，可选）和用户ID`uid`。请确保：
   1. 参数按照键字典升序排列，例如`ts=1443079775&ttl=30&uid=U123456789`或者`ts=1443079775&uid=U123456789`
   2. `ts`和`ttl`的单位都是秒
+- **Last but not least，请将 demo 内的 API key 等参数替换为自己账户的数据**
 
 ## Third party modules
 
@@ -85,6 +86,7 @@
 
 ## Contributors
 
+- [weishuaigithub](https://github.com/weishuaigithub)
 - [hewiez](https://github.com/hewiez)
 - [wuqingzheng](https://github.com/wuqingzheng)
 - [flyingant](https://github.com/flyingant)

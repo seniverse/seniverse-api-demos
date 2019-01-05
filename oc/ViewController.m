@@ -25,19 +25,33 @@ static NSString *TIANQI_LIFE_SUGGESTION_URL = @"https://api.seniverse.com/v3/lif
 
     // 创建 session 对象
     NSURLSession *session = [NSURLSession sharedSession];
-    NSString *urlStr = [self fetchWeatherWithURL:TIANQI_LIFE_SUGGESTION_URL ttl:@30 Location:@"shanghai" language:@"zh-Hans" unit:@"c" start:@"1" days:@"1"];
+    NSString * nameStr  = @"济宁";//输入汉字 区别“集宁”，使用拼音则会造成混乱
+    NSString *dataUTF8 = [nameStr stringByAddingPercentEncodingWithAllowedCharacters:(NSCharacterSet * )NSUTF8StringEncoding];
+    NSString *urlStr = [self fetchWeatherWithURL:TIANQI_LIFE_SUGGESTION_URL //TIANQI_NOW_WEATHER_URL
+                                             ttl:@30
+                                        Location:dataUTF8//查询位置需要对汉字进行转码，不然会有地名重复
+                                        language:@"zh-Hans"//zh-Hans 简体中文
+                                            unit:@"c"//单位 当参数为c时，温度c、风速km/h、能见度km、气压mb;当参数为f时，温度f、风速mph、能见度mile、气压inch
+                                           start:@"1"
+                                            days:@"1"];
     NSURL *url = [NSURL URLWithString:urlStr];
-
     // 通过 URL 初始化 task,在 block 内部可以直接对返回的数据进行处理
     NSURLSessionTask *task = [session dataTaskWithURL:url
                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                        NSLog(@"%@", [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil]);
-                                    }];
+                                    NSLog(@"输出:%@",[self dictionaryToJson: [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil]] );                                    }];
 
     // 启动任务
     [task resume];
 }
 
+//字典转json格式字符串：xcode9  以后大部分转码插件扑街了，所以手动转码。
+- (NSString*)dictionaryToJson:(NSDictionary *)dic
+{
+    NSError *parseError = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
 /**
  配置带请求参数的 url 地址。
 
