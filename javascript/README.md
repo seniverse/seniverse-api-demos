@@ -97,6 +97,21 @@ $ http-server -p 3333
 
 *注：请通过 `127.0.0.1` 的链接访问 `/jsonp`，而不是 `localhost`，`localhost` 访问会跨域！！！*
 
+## 试用插件
+
+同上，本地需要安装 node http-server。仅仅在浏览器中打开 HTML 文件是无法正常请求的。
+
+```bash
+# 安装 http-server
+$ npm i http-server -g
+# 然后切换到你的项目目录
+$ cd seniverse-api-demos/javascript
+# 启动 server，可自定义端口。以 3004 为例
+$ http-server -p 3004
+```
+
+打开浏览器访问 `http://127.0.0.1:3333/widget.html` (`widget.html` 名称可替换为你自己的 HTML 名)
+
 ## 参数说明
 
 ### 所查询的位置
