@@ -55,7 +55,7 @@ class DemoJava {
             String days
     )  throws SignatureException, UnsupportedEncodingException {
         String timestamp = String.valueOf(new Date().getTime());
-        String params = "ts=" + timestamp + "&ttl=30&uid=" + TIANQI_API_USER_ID;
+        String params = "ts=" + timestamp + "&ttl=1800&uid=" + TIANQI_API_USER_ID;
         String signature = URLEncoder.encode(generateSignature(params, TIANQI_API_SECRET_KEY), "UTF-8");
         return TIANQI_DAILY_WEATHER_URL + "?" + params + "&sig=" + signature + "&location=" + location + "&language=" + language + "&unit=" + unit + "&start=" + start + "&days=" + days;
     }
