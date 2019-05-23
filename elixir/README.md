@@ -29,3 +29,15 @@ iex> SeniverseDemo.call
 ```
 
 查看 [HTTPotion 文档](https://hexdocs.pm/httpotion/readme.html) 以了解更多关于这个 Elixir 的 HTTP 客户端的用法。
+
+## Test
+
+```sh
+$ mix test
+..
+
+Finished in 0.06 seconds
+2 doctests, 0 failures
+
+Randomized with seed 925123
+```
