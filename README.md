@@ -6,7 +6,7 @@
 
 ## 代码示例
 
-- [Javascript](./javascript)
+- [JavaScript](./javascript)
 
   - [直接调用](./javascript/index.html)
   - [JSONP](./javascript/jsonp.html)
@@ -39,6 +39,8 @@
 
   - [使用更安全的签名验证方式（荐）](./common-lisp/seniverse-demo.lisp)
   - [cl-seniverse-api ( Lisp SDK )](https://github.com/muyinliu/cl-seniverse-api)
+
+- [Elixir](./elixir)
 
 **注意**：所有代码示例仅做开发参考使用，不要在生产环境下暴露 key！生产环境下请通过后端进行签名验证。
 
