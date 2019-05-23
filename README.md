@@ -1,5 +1,5 @@
 # 心知天气 API 调用示例
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 > 举例说明心知天气 API 的基本调用方法
 
@@ -89,7 +89,7 @@
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/muyinliu"><img src="https://avatars0.githubusercontent.com/u/3318872?v=4" width="100px;" alt="muyinliu"/><br /><sub><b>muyinliu</b></sub></a><br /><a href="https://github.com/seniverse/seniverse-api-demos/commits?author=muyinliu" title="Code">💻</a></td><td align="center"><a href="https://www.mokeyjay.com/"><img src="https://avatars0.githubusercontent.com/u/6757507?v=4" width="100px;" alt="mokeyjay"/><br /><sub><b>mokeyjay</b></sub></a><br /><a href="https://github.com/seniverse/seniverse-api-demos/commits?author=mokeyjay" title="Code">💻</a></td></tr></table>
+<table><tr><td align="center"><a href="https://github.com/muyinliu"><img src="https://avatars0.githubusercontent.com/u/3318872?v=4" width="100px;" alt="muyinliu"/><br /><sub><b>muyinliu</b></sub></a><br /><a href="https://github.com/seniverse/seniverse-api-demos/commits?author=muyinliu" title="Code">💻</a></td><td align="center"><a href="https://www.mokeyjay.com/"><img src="https://avatars0.githubusercontent.com/u/6757507?v=4" width="100px;" alt="mokeyjay"/><br /><sub><b>mokeyjay</b></sub></a><br /><a href="https://github.com/seniverse/seniverse-api-demos/commits?author=mokeyjay" title="Code">💻</a></td><td align="center"><a href="http://cv.flyingant.me/"><img src="https://avatars0.githubusercontent.com/u/1773209?v=4" width="100px;" alt="Liu Cheng a.k.a MaYi"/><br /><sub><b>Liu Cheng a.k.a MaYi</b></sub></a><br /><a href="https://github.com/seniverse/seniverse-api-demos/commits?author=flyingant" title="Code">💻</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 - [weishuaigithub](https://github.com/weishuaigithub)
