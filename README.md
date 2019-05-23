@@ -1,4 +1,5 @@
 # 心知天气 API 调用示例
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 > 举例说明心知天气 API 的基本调用方法
 
@@ -86,6 +87,11 @@
 
 ## Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://github.com/muyinliu"><img src="https://avatars0.githubusercontent.com/u/3318872?v=4" width="100px;" alt="muyinliu"/><br /><sub><b>muyinliu</b></sub></a><br /><a href="https://github.com/seniverse/seniverse-api-demos/commits?author=muyinliu" title="Code">💻</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 - [weishuaigithub](https://github.com/weishuaigithub)
 - [hewiez](https://github.com/hewiez)
 - [wuqingzheng](https://github.com/wuqingzheng)
