@@ -1,4 +1,4 @@
-# Elixir
+# Elixir Demo for Seniverse API
 
 [Elixir 代码示例](./lib/seniverse_demo.ex)调用心知天气 API。
 
