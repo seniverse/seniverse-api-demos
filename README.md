@@ -2,7 +2,7 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 
-一些示例代码来说明心知天气 API 的基本调用方法。
+请首先查看我们的[文档](https://docs.seniverse.com)来了解心知天气 API 的调用方式，以下一些示例代码。
 
 ## 代码示例
 
