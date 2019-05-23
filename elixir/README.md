@@ -1,6 +1,6 @@
 # Elixir
 
-[Elixir 代码示例](./lib/elixir.ex)调用心知天气 API。
+[Elixir 代码示例](./lib/seniverse_demo.ex)调用心知天气 API。
 
 ## Usage
 
