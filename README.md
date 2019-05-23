@@ -2,7 +2,7 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 
-请首先查看我们的[文档](https://docs.seniverse.com)来了解心知天气 API 的调用方式，以下一些示例代码。
+请首先查看心知天气的[文档](https://docs.seniverse.com)来了解心知天气 API 的调用方式，以下是一些不同编程语言的示例代码，也欢迎给此项目提 PR 来添加更多不同语言的调用示例，同时也可以向心知天气申请以获得[开发者认证](https://blog.seniverse.com/2290)。
 
 ## 代码示例
 
