@@ -53,6 +53,8 @@ defmodule SeniverseDemo do
     ttl = 300
     sig = Token.create_sig(@key, @uid, ts, ttl)
 
+    # URL-Encode would be done by HTTPotion
+    # with `query` option as an Elixir Map
     HTTPotion.get(@exmaple_url,
       query: %{
         ts: ts,
