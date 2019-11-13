@@ -14,6 +14,7 @@
 - [Node.js](./nodejs)
 
   - [使用更安全的签名验证方式（荐）](./nodejs/lib/api.js)
+  - [心知官方 Node.js package（支持 Typescript）](https://github.com/seniverse/seniverse-api)
 
 - [Python](./python)
 
