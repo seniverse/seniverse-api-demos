@@ -70,3 +70,8 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
+/C#/CSharpDemo/bin/*
+/C#/CSharpDemo/obj/*
+/C#/CSharpDemo/.vs/CSharpDemo/v16/TestStore/0/*.testlog
+/C#/CSharpDemo/.vs/CSharpDemo/v16/*.suo
+/C#/CSharpDemo/.vs/CSharpDemo/v16/TestStore/0/*.manifest
